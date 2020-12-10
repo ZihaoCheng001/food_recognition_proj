@@ -8,9 +8,9 @@ You can unzip the images and 4 CNN models and then put them under the folder: "f
 You can find the structure of folder "food_recognition_proj" in "file_structure.png". 
 
 Note:  
-    To avoid file structure confusion:
-    just under "images" folder, you can see folder "train" and "test", whcih contains images for training and testing. 
-    just under each of the model folders, such as "Inception_model_03", you can find "assets", "variables" and "saved_model.pb". 
+    To avoid file structure confusion.      
+    just under "images" folder, you can see folder "train" and "test", whcih contains images for training and testing.     
+    just under each of the model folders, such as "Inception_model_03", you can find "assets", "variables" and "saved_model.pb".     
 
 Framework for this project:      
 Tensorflow 2.3.0.   
@@ -18,7 +18,7 @@ Training is done using googe colab for the GPU.
 
 Run Demo    
 Demo images are in folder "demo_images" and "online_images". Images in demo_images are selected from test data. Images in online_images folder are selected by me from google search       
-To run the demo file,       
+Two methods to run the demo file,       
     Method 1:  under the folder "food_recognition_proj", type the following command "python demo.py --input {image_folder}".    
                 For example: "python demo.py --input demo_images" or command "python demo.py --input online_images"   
     Method 2:  under the folder "food_recognition_proj", type the following command "python demo.py --input {image_path}".  
@@ -42,5 +42,5 @@ The fine-tuning code is in file "model_creation.ipynb". I used transfer learning
     
 Test result      
 In file "model_selection_and_test.ipynb", I test the four models. From the 4 models I select top 3 models (InceptionV3, ResNet152V2 and Xception) and then perform majority votting.    
-For each of the model, the F1-score is 0.98. After majority votting, the F1-score is 0.99.  
+For each of the 4 models, the F1-score is about 0.98. After majority votting, the F1-score is 0.99.  
 
