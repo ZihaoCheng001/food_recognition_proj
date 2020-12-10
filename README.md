@@ -38,7 +38,7 @@ The fine-tuning code is in file "model_creation.ipynb". I used transfer learning
         * InceptionV3   
         * ResNet152V2   
         * Xception  
-        * InceptionResNetV2 
+        * InceptionResNetV2     
         (Note: the code are created in google colab. If you run in local or in your own env, may need to change paths in the code)      
     
 Test result      
