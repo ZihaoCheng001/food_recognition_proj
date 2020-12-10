@@ -39,8 +39,9 @@ The fine-tuning code is in file "model_creation.ipynb". I used transfer learning
         * ResNet152V2   
         * Xception  
         * InceptionResNetV2 
+        (Note: the code are created in google colab. If you run in local or in your own env, may need to change paths in the code)      
     
 Test result      
 In file "model_selection_and_test.ipynb", I test the four models. From the 4 models I select top 3 models (InceptionV3, ResNet152V2 and Xception) and then perform majority votting.    
 For each of the 4 models, the F1-score is about 0.98. After majority votting, the F1-score is 0.99.  
-
+    (Note: the code are created in google colab. If you run in local or in your own env, may need to change paths in the code) 
