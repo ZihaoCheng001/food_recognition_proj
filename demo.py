@@ -22,6 +22,15 @@ def checkGPU():
 
     if len(physical_devices) >= 1:
         tf.config.experimental.set_memory_growth(physical_devices[0], True)
+
+def checkImage(imagePath):
+    # "check whether the input is an valid image format"
+    imagePath = imagePath.lower()
+    if imagePath.endswith(".jpg") or imagePath.endswith(".jpeg") or imagePath.endswith(".png"):
+        return True
+    else:
+        return False
+    
     
 def loadModel():
     models = []
@@ -89,19 +98,26 @@ def run(input_path):
     if os.path.isdir(input_path):   ## if it is folder, then add all the images into list
         file_list = listdir(input_path)
         for file in file_list:
-            image_list.append(input_path + "/" + file)
+            if checkImage(file):
+                image_list.append(input_path + "/" + file)
+            else:
+                print("current code only accepts image file with suffix .jpg, .jpeg and .png, {} is not accepted".format(file))
     else:
-        image_list.append(input_path)
+        if checkImage(input_path):
+            image_list.append(input_path)
+        else:
+            print("current code accepts image file with suffix .jpg, .jpeg or .png,  {} is not accepted".format(input_path))
     
-    ## check whether it is image or folder
-    print("Start to load CNN models......")
-    models = loadModel()
-    print("Finished loading CNN models, start to predict and vote......")
-    
-    for image in image_list:
-        votting_result = modelVotting(models, image)
-        fileName = image.split("/")[-1]
-        print("The predict result for image {} is {}".format(fileName, votting_result))
+    if len(image_list) > 0:
+        ## check whether it is image or folder
+        print("Start to load CNN models......")
+        models = loadModel()
+        print("Finished loading CNN models, start to predict and vote......")
+        
+        for image in image_list:
+            votting_result = modelVotting(models, image)
+            fileName = image.split("/")[-1]
+            print("The predict result for image {} is {}".format(fileName, votting_result))
         
     print("Demo finished")
     
