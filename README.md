@@ -14,7 +14,7 @@ You can find the structure of folder "food_recognition_proj" in **"file_structur
 
 **Framework**      
 Tensorflow 2.3.0.   
-Training is done using googe colab for the GPU.     
+Training is done using googe colab.     
 
 **Run Demo**    
 Demo images are in folder "demo_images" and "online_images". Images in demo_images fold are selected from test data. Images in online_images folder are selected by me from google search.
@@ -23,20 +23,20 @@ Two methods to run the demo file,
     **Method 1**:  under the folder "food_recognition_proj", type the following command:    
                 ```
                 python demo.py --input {image_folder}
-                ``` 
+                ```      
                 For example:     
                 ``` 
-                python demo.py --input demo_images 
-                python demo.py --input online_images
-                ``` 
+                python demo.py --input demo_images   
+                python demo.py --input online_images    
+                ```     
     **Method 2**:  under the folder "food_recognition_proj", type the following command:    
                 ```
                 python demo.py --input {image_path}
-                ```
+                ``` 
                 For example:    
                 ```
-                python demo.py --input demo_images/3545.jpg
-                python demo.py --input online_images/hamburger01.jpg
+                python demo.py --input demo_images/3545.jpg 
+                python demo.py --input online_images/hamburger01.jpg 
                 ``` 
     
 **Dataset details**      
@@ -53,7 +53,7 @@ The fine-tuning code is in file **"model_creation.ipynb"**. I used **transfer le
         * InceptionV3   
         * ResNet152V2   
         * Xception  
-        * InceptionResNetV2
+        * InceptionResNetV2     
         (Note: the code are created in google colab. If you run in local or in your own env, may need to change paths in the code)      
     
 **Test result**      
