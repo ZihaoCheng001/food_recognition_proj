@@ -21,18 +21,18 @@ Demo images are in folder "demo_images" and "online_images". Images in demo_imag
 demo code is in file **"demo.py"**  
 Two methods to run the demo file,       
     **Method 1**:  under the folder "food_recognition_proj", type the following command:    
-        ```
-        python demo.py --input {image_folder}
-        ```.            
+        
+        - python demo.py --input {image_folder}
+                    
         For example:     
 
         - python demo.py --input demo_images   
         - python demo.py --input online_images    
                      
     **Method 2**:  under the folder "food_recognition_proj", type the following command:    
-        ```
-        python demo.py --input {image_path}
-        ```. 
+        
+        - python demo.py --input {image_path}
+        
         For example:    
 
         - python demo.py --input demo_images/3545.jpg 
