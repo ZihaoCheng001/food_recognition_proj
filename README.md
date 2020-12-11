@@ -28,7 +28,7 @@ Two methods to run the demo file,
     **Method 2**:  under the folder "food_recognition_proj", type the following command:    
         - python demo.py --input {image_path}   
        For example:    
-        - python demo.py --input demo_images/3545.jpg 
+        - python demo.py --input demo_images/3545.jpg     
         - python demo.py --input online_images/hamburger01.jpg 
                  
 **Dataset details**      
