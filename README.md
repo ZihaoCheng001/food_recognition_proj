@@ -19,7 +19,7 @@ Training is done using googe colab.
 **Run Demo**    
 Demo images are in folder "demo_images" and "online_images". Images in demo_images fold are selected from test data. Images in online_images folder are selected by me from google search.
 demo code is in file **"demo.py"**  
-Two methods to run the demo file,       
+**Two methods to run the demo file**,       
     **Method 1**:  under the folder "food_recognition_proj", type the following command:    
         python demo.py --input {image_folder}   
         For example:     
