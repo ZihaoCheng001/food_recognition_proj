@@ -21,24 +21,16 @@ Demo images are in folder "demo_images" and "online_images". Images in demo_imag
 demo code is in file **"demo.py"**  
 Two methods to run the demo file,       
     **Method 1**:  under the folder "food_recognition_proj", type the following command:    
-        
-        - python demo.py --input {image_folder}
-                    
+        python demo.py --input {image_folder}
         For example:     
-
         - python demo.py --input demo_images   
         - python demo.py --input online_images    
-                     
     **Method 2**:  under the folder "food_recognition_proj", type the following command:    
-        
         - python demo.py --input {image_path}
-        
-        For example:    
-
+       For example:    
         - python demo.py --input demo_images/3545.jpg 
         - python demo.py --input online_images/hamburger01.jpg 
                  
-    
 **Dataset details**      
     The images for training and testing are from this kaggle project: https://www.kaggle.com/kmader/food41 . There are 101 caegories in this dataset    
     I select four categories: Hamburger, Pizza, Ramen, and Sushi from this those 101 categories. Each category has 1000 images. 
